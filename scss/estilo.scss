@@ -75,7 +75,8 @@ color: rgb(116, 116, 116);
 }
 
 .section__p--image{
-    margin-left: 3px;
+    margin-left: 30px;
+    font-size: 38px;
 }
 
 .section__article{
@@ -96,7 +97,7 @@ color: rgb(116, 116, 116);
     z-index: 1000;
 }
 
-.rowProyect{
+.proyect__row{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -104,17 +105,17 @@ color: rgb(116, 116, 116);
     padding-top: 55px;
 }
 
-.imgProyect{
+.proyect__image{
     width: 420px;
     height: 350px;
     opacity: 0.6;
 }
 
-.imgProyect:hover {
+.proyect__image:hover {
     opacity: 1;
 }
 
-.imgProyect{
+.proyect__image{
     transition: all 0.9s;
 }
 
@@ -128,7 +129,6 @@ form{
     margin-top: 50px;
     margin-bottom: 300px;
     margin:auto;
-    /* border: solid black 1px; */
 }
     
 .form-group{
@@ -141,28 +141,26 @@ form{
 
 /* pages servicios */
 
-.h2Position{
+.servicios__h2{
     text-align: center;
     padding-top: 90px;
-    /* border: solid 1px black; */
     width: 700px;
     height: 250px;
     margin: auto;
 }
 
-.font-h2{
+.servicios__h2--font{
     font-size: 55px;
     color:rgb(20, 20, 20);
 }
 
-.font-p-servicio{
+.servicios__h2--font--p{
     font-size: 20px;
     color: rgb(20, 20, 20);
 }
 
-.bloque{
+.servicios__bloque--texto{
     display:inline-block;
-    /*border:solid 1px black;*/
     background-color: white;
     width: 351px;
     padding-top: 20px;
@@ -171,59 +169,53 @@ form{
     padding-bottom: 20px;
 }
 
-.pServicios{
+.servicios__p{
     color: rgb(90, 90, 90);
 }
 
-.position-right{
-    float: right;
-    margin: auto;
-}
-
-.fondo-servicio{
+.servicios__image--fondo{
     margin-top: 70px;
     width: 100%;
     height: 700px;
     opacity: 0.8;
 }
 
-.fondo-servicio:hover{
+.servicios__image--fondo:hover{
     opacity: 1;
 }
 
-.fondo-servicio{
+.servicios__image--fondo{
     transition: all 0.4s;
 }
 
-.img-servicio{
+.servicios__image--principal{
     width: 100%;
     height: 100%;
 }
 
-.row-servicio{
+.servicios__row{
     display: flex;
     flex-direction: row;
     float: right;
 }
 
-.servicio-section{
+.servicios__section{
     border-left: solid 1px rgb(187, 187, 187);
     background-color: white;
     width: 304px;
     height: 584px;
 }
 
-.h2-servicio{
+.servicios__h3{
     text-align: center;
     padding-top: 80px;
     color: rgb(90, 90, 90);
 }
 
-.p-servicio{
+.servicios__p--pasos{
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
-    /* padding-top: 50px; */
     color: rgb(90, 90, 90);
 }
 
@@ -238,13 +230,104 @@ form{
 
 /*responsive*/
 
-@media (max-width: 576px) {
-    .rowFooter{
+@media (max-width: 600px){
+
+    .fondo__body{
+        background-image: none;
+        background-color: whitesmoke;
+    }
+
+    .footer__row{
         flex-direction: column;
     }
 
-    .column-mediaquary{
+    .section__article{
+        grid-template-columns:repeat(1,100%);
+        
+        
+    }
+
+    .section__p--image{
+        font-size: 30px;
+    }
+
+    .section__image{
+        display: none;
+    }
+
+    .line_mediaquary{
+        width: 300px;
+        border-bottom: solid 1px black;
+        margin-left: 135px;
+    }
+
+    .proyect__image{
+        width: 100%;
+        height: 380px;
+    }
+
+    .servicios__h2{
+        text-align: center;
+        padding-top: 90px;
+        width: 400px;
+        height: 250px;
+        margin: auto;
+    }
+
+    .servicios__h2--font{
+        font-size: 45px;
+        color:rgb(20, 20, 20);
+    }
+    
+    .servicios__h2--font--p{
+        font-size: 15px;
+        color: rgb(20, 20, 20);
+    }
+
+    .animate__backInRight{
+        animation-name: backInLeft;
+    }
+
+    .servicios__bloque--texto{
+        width: 100%;
+        height: 400px;
+    }
+    
+    .servicios__image--fondo{
+        margin-top: 50px;
+        width: 100%;
+        height: 450px;
+  }
+
+  .servicios__row{
         display: flex;
         flex-direction: column;
-    }
+        float: none;
+        width: 100%;
+   }
+    
+    .servicios__section{
+        border-left: none;
+        border-top: solid 1px rgb(187, 187, 187);
+        border-bottom: solid 1px rgb(187, 187, 187);
+        background-color: white;
+        width: 100%;
+ }
+    
+    .servicios__h3{
+        text-align: center;
+        padding-top: 100px;
+        color: rgb(90, 90, 90);
+        font-size: 40px;
+}
+    
+    .servicios__p--pasos{
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+        color: rgb(90, 90, 90);
+        font-size: 20px;
+}
+
 }
