@@ -85,7 +85,8 @@ p, h2 {
   opacity: 0.6; }
 
 .proyect__image:hover {
-  opacity: 1; }
+  opacity: 1;
+  transform: scale(1.1); }
 
 .proyect__image {
   transition: all 0.9s; }
