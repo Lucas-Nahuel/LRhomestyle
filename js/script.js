@@ -8,7 +8,10 @@ document.addEventListener('DOMContentLoaded', function(){
         {img: '../images/imagen6.jpg'},
         {img: '../images/imagen7.jpg'},
         {img: '../images/imagen8.jpg'},
-        {img: '../images/imagen9.jpg'}
+        {img: '../images/imagen9.jpg'},
+        {img: '../images/imagen10.jpg'},
+        {img: '../images/imagen11.jpg'},
+        {img: '../images/imagen12.jpg'}
     ]
     let contador = 0
     const contenedor = document.querySelector('.slideshow')
