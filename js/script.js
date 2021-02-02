@@ -11,7 +11,13 @@ document.addEventListener('DOMContentLoaded', function(){
         {img: '../images/imagen9.jpg'},
         {img: '../images/imagen10.jpg'},
         {img: '../images/imagen11.jpg'},
-        {img: '../images/imagen12.jpg'}
+        {img: '../images/imagen12.jpg'},
+        {img: '../images/imagen13.jpg'},
+        {img: '../images/imagen14.jpg'},
+        {img: '../images/imagen15.jpg'},
+        {img: '../images/imagen16.jpg'},
+        {img: '../images/imagen17.jpg'},
+        {img: '../images/imagen18.jpg'}
     ]
     let contador = 0
     const contenedor = document.querySelector('.slideshow')
